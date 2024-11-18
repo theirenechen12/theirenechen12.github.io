@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irene's Portfolio Page</title>
+
+    <!-- include CSS -->
+    <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+    <header>
+        <nav id="about-me">
+            <a class="jump-link" href="#about-me">Back to top</a>
+            <a class="jump-link" href="#skills">Skills</a>
+            <a class="jump-link" href="#experience-box">Experience</a>
+            <a class="jump-link" href="#projects">Projects</a>
+        </nav>
+    </header>
+    <!-- Interactive contacts badge -->
+    <!-- todo: create contacts div -->
+    <div id="contact-overlay">
+        <button id="contact-btn">
+            Show Contacts
+        </button>
+        <p id="contact-info">
+            Phone: 626-710-7406<br>
+            Email: ichen7@calstatela.edu<br>
+            GitHub: theirenechen12
+        </p>
+    </div>
+
+    <!-- Main Content: About me, projects, etc. -->
+    <div class="responsive-box">
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Enthusiastic and diligent computer science major seeking a position to develop my programming and data analysis skills. 
+            </p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Documentation</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Kotlin</li>
+                <li>C</li>
+                <li>PR management</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul class="card-list">
+                <li class="card">
+                    <h3>Voice Changer</h3>
+                    <hr>
+                    <h5>Used Java and HTML</h5>
+                    <p>
+                        Developed a web application that takes in a live audio capture of a person’s voice and changes its sound characteristics.
+                    </p>
+                </li>
+                <li class="card">
+                    <h3>Tweet Analyzer</h3>
+                    <hr>
+                    <h5>Used Python and DjangoL</h5>
+                    <p>
+                        Developed a Django web application that determines the sentiment of a tweet using natural language
+                        processing, searches for news articles relevant to the tweet, and detects objects in the attached media.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section id="experience-box">
+            <h2>Work Experience</h2>
+            <ul class="card-list">
+                <li class="card">
+                    <h3>PR Chair</h3>
+                    <hr>
+                    <h5>Oct 2024- Present</h5>
+                    <p>
+                        PR Chair for Artificial Intelligence and Machine Learning Club at Cal State LA
+                    </p>
+                </li>
+                <li class="card">
+                    <h3>Admin</h3>
+                    <hr>
+                    <h5>May 2024- Present</h5>
+                    <p>
+                        Admin of a Kpop stats account. Post about Circle Chart Stats which improves and involves mathematical skills.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- JS -->
+    <script src="./resources/index.js"></script>
+</body>
+</html>
