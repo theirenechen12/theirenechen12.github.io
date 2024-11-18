@@ -1,0 +1,133 @@
+/**
+ * File: style.css
+ * Author: ACM Beginners Project edited by Irene Chen
+ */
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14pt;
+    color: rgb(35, 35, 35);
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgb(0, 255, 187);
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a.jump-link {
+    display: block;
+    padding: 8px;
+    background-color: rgb(0, 255, 187);
+    color: white;
+    text-decoration: none;
+}
+
+/* for bigger screens e.g laptop / tablet */
+@media (min-width: 640px) {
+    .responsive-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: auto auto; */
+        margin-top: 64px;
+        padding: 4px;
+        gap: 5px;
+    }
+    
+    .page-section {
+        margin: 8px;
+        padding: 8px;
+    }
+
+    ul.card-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin: 0;
+        padding: 0 16px;
+    }
+}
+
+/* mobile screens e.g phones or smaller tablets */
+@media (max-width: 639px) {
+    .responsive-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* grid-template-columns: auto auto; */
+        padding: 0;
+        /* gap: 5px; */
+    }
+    
+    .page-section {
+        margin: 4px;
+        padding: 4px;
+    }
+
+    ul.card-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin: 0;
+        padding: 0 8px;
+    }
+}
+
+li.card {
+    border: solid silver 2px;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: rgb(240, 240, 240);
+}
+
+h2, h3 {
+    color: rgb(0, 97, 133);
+}
+
+/* Interactive Content */
+
+/* Container (Contact Info) */
+div#contact-overlay {
+    position: fixed;
+    z-index: 2;
+    top: 64px;
+    right: 8px;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: rgba(133, 216, 249, 0.8);
+    font-family: inherit;
+    font-size: 16pt;
+}
+
+button#contact-btn {
+    display: block;
+    margin-bottom: 4px;
+    padding: 4px;
+    border: none;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    font-family: inherit;
+    font-size: inherit;
+    color: rgb(133, 216, 249);
+}
+
+p#contact-info {
+    text-align: left;
+    display: none; /* we want this contact info invisible first to show later! */
+    background-color: whitesmoke;
+    color: rgb(0, 60, 134);
+}
